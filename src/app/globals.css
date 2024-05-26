@@ -16,6 +16,11 @@
   }
 }
 
+/* to mitigate tailwind css not respecting markdown styles */
+.markdown > * {
+  all: revert;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
